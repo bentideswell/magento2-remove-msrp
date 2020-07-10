@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- /** @thanks https://github.com/SchumacherFM/Magento2-Mocks */ -->
+    <virtualType name="Magento\Catalog\Pricing\Price\Pool">
+        <arguments>
+            <argument name="prices" xsi:type="array">
+                <item name="msrp_price" xsi:type="string">Magento\Msrp\Pricing\Price\MsrpPrice</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Catalog\Model\ProductRenderList">
+        <arguments>
+            <argument name="productAttributes" xsi:type="array"/>
+        </arguments>
+    </type>
+</config>
