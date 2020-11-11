@@ -11,7 +11,7 @@
             "Magento\\Msrp\\": "Mock\\Magento\\Msrp"
         }
     },
-    "version": "1.0.1",
+    "version": "1.0.2",
     "replace": {
         "magento/module-msrp": "*",
         "magento/module-msrp-grouped-product": "*",

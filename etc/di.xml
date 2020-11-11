@@ -8,6 +8,13 @@
             </argument>
         </arguments>
     </virtualType>
+    <virtualType name="Magento\Bundle\Pricing\Price\Pool">
+        <arguments>
+            <argument name="prices" xsi:type="array">
+                <item name="msrp_price" xsi:type="string">Magento\Msrp\Pricing\Price\MsrpPrice</item>
+            </argument>
+        </arguments>
+    </virtualType>
     <type name="Magento\Catalog\Model\ProductRenderList">
         <arguments>
             <argument name="productAttributes" xsi:type="array"/>
